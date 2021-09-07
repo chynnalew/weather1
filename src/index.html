@@ -5,12 +5,19 @@
 <body>
   <div class="container">
     <h1>Get Weather Conditions From Anywhere!</h1>
-    <label for="location">Enter a location:</label>
-    <input id="location" type="text">
+    <label for="input">Enter a location:</label> 
+    <select name="input" id="input">
+      <option value="q">city</option>
+      <option value="zip">zip code</option>  
+    </select>
+    <input type="text" id="location">
     <button class="btn-success" id="weatherLocation">Get Current Temperature and Humidity</button>
+    <div class="showName"></div>
     <div class="showErrors"></div>
     <div class="showHumidity"></div>
     <div class="showTemp"></div>
+    <div class="cloudCover"></div>
+    <div class="windSpeed"></div>
   </div>
 </body>
 </html>
